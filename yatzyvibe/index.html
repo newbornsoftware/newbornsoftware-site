@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YatzyVibe — Newborn Software</title>
+  <meta name="description" content="YatzyVibe is a clean, modern Yatzy game with offline, nearby play, and deep customization.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  
+    <nav>
+      <div class="nav-wrap">
+        <a class="brand" href="../index.html"><span class="dot"></span> Newborn Software</a>
+        <ul><li><a href="../index.html">Home</a></li><li><a href="index.html" aria-current="page">YatzyVibe</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms & Conditions</a></li></ul>
+      </div>
+    </nav>
+    
+<header class="hero" style="padding-top: 20px;">  <!-- raise content; tweak this value -->
+  <div class="container" style="text-align:center">
+
+    <!-- App logo (top-center). Tweak size by changing --logoSize below -->
+    <img
+      src="AppLogo.jpeg"
+      alt="YatzyVibe logo"
+      class="site-logo"
+      style="
+        --logoSize: 150px;              /* ← change this value to resize */
+        display:block;
+        margin:0 auto 50px auto;        /* a little tighter under the logo */
+        width:min(var(--logoSize, 150px), 70vw);
+        height:auto;
+        border-radius: 23%;             /* rounded corners that scale with size */
+      "
+    >
+
+    <span class="badge">iPhone & iPad</span>
+    <span class="badge">Play via WiFi or Bluetooth</span>
+    <span class="badge">Play Offline</span>
+    <span class="badge">Play Nearby Opponent</span>
+    
+    <!-- tweak spacing with --descTop / --descBottom defined on the container -->
+    <p style="max-width: 800px; margin: var(--descTop, 40px) auto var(--descBottom, 40px);">
+  A modern take on the classic five-dice game. Play offline or with a nearby opponent via
+  <span style="display:block">Wi&#8209;Fi/Bluetooth. Customize rules, colors, and game feel.</span>
+</p>
+    <p style="max-width: 800px; margin: 0 auto;">
+      <a class="btn" href="#" onclick="alert('App Store/TestFlight links coming soon');return false;">Get the App</a>
+    </p>
+  </div>
+</header>
+
+
+  <main class="container section">
+    <div class="grid cols-2">
+      <section class="card">
+        <h2>Highlights</h2>
+        <ul>
+          <li>Play offline vs Human or AI</li>
+          <li>Play a nearby opponent over Wi-Fi or Bluetooth (no internet required)</li>
+          <li>Classic (13) or Enhanced (15) categories</li>
+          <li>Configurable scoring options and flexible straight rules</li>
+          <li>Haptic feedback and roll sounds (per-type toggles)</li>
+          <li>Customizable backgrounds and colors</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Quick Start</h2>
+        <ol>
+          <li>Choose <em>Play offline</em> or <em>Play nearby opponent</em>.</li>
+          <li>Roll up to three times, tap dice to hold, then pick a score box.</li>
+          <li>Use <em>Undo</em> briefly after scoring if needed.</li>
+          <li>Finish all categories to see the winner and stats.</li>
+        </ol>
+      </section>
+    </div>
+
+    <section class="section">
+      <div class="grid cols-2">
+        <div class="card">
+          <h2>Rules & Scoring</h2>
+          <p>Upper section: Ones–Sixes (sum of matching dice). Reach 63+ for a Bonus (35 by default).</p>
+          <p>Lower section includes One Pair and Two Pair (Enhanced mode), Three/Four of a kind, Full House, Small/Large Straight, Yatzy, and Chance.</p>
+          <p>Many rules are configurable in Settings: Two-Pair format (distinct pairs vs any four-kind), small/large straight recognition, fixed-value or sum-based scores, bonus value, and more.</p>
+        </div>
+        <div class="card">
+          <h2>Settings</h2>
+          <ul>
+            <li>AI skill: Beginner / Normal / Expert</li>
+            <li>AI thinking time: 0.25 – 5.00s</li>
+            <li>Auto first roll: On / Off</li>
+            <li>Dice face: Pips / Numbers</li>
+            <li>Undo timer: 0–30s</li>
+            <li>Score highlights: Pending scores / Scores taken</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Help</h2>
+        <details open>
+          <summary><strong>1. Rules of Play (Basics)</strong></summary>
+          <p>The goal is to achieve the highest score by rolling and selecting dice combinations. Players alternate turns; each turn allows up to three rolls before choosing a score.</p>
+        </details>
+        <details>
+          <summary><strong>2. Quick Start Guide / Game Flow</strong></summary>
+          <ul>
+            <li>On first run, accept Local Network and Bluetooth prompts to enable nearby play.</li>
+            <li>Home: choose Play offline (Human or AI) or Play nearby opponent (Host/Join).</li>
+            <li>Each player gets 3 rolls per turn; tap dice to hold/unhold.</li>
+            <li>Use <em>Undo</em> within the countdown to revert the last score selection.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><strong>3. Tips & Strategy</strong></summary>
+          <ul>
+            <li>Chase the 63-point upper-section pace for the bonus.</li>
+            <li>Preserve near-straights and high-value combos.</li>
+            <li>Use Chance for messy rolls.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><strong>4. Features</strong></summary>
+          <ul>
+            <li>Offline vs Human/AI, Nearby via Wi-Fi/Bluetooth</li>
+            <li>Classic or Enhanced categories</li>
+            <li>Per-type haptics and sounds</li>
+            <li>Custom backgrounds and colors</li>
+            <li>Simple, readable score grid with pending/taken highlights</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Support</h2>
+        <p>Email us at <a href="mailto:contact@newbornsoftware.com?subject=YatzyVibe%20Support">contact@newbornsoftware.com</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  
+    <footer>
+      <div class="container small">
+        © 2025 Newborn Software. All rights reserved.
+      </div>
+    </footer>
+    
+</body>
+</html>
