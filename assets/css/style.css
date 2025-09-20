@@ -140,5 +140,38 @@ nav a[aria-current="page"]{
   opacity: 0;
 }
 
+/* Large disclosure triangle for Help card */
+.help-card { --disclosureSize: 28px; } /* overridden inline to 32px in HTML above */
+
+.help-card summary::-webkit-details-marker { display: none; } /* Chrome/Safari */
+.help-card summary{
+  list-style: none;             /* Firefox */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+/* Big triangle icon */
+.help-card summary::before{
+  content: "▶";                 /* right-pointing triangle */
+  font-size: var(--disclosureSize);
+  line-height: 1;
+  width: calc(var(--disclosureSize) * 0.9);
+  text-align: center;
+  transition: transform .2s ease, content .2s ease;
+}
+
+/* When open, show down triangle */
+.help-card details[open] > summary::before{
+  content: "▼";
+}
+
+/* Accessible focus ring */
+.help-card summary:focus-visible{
+  outline: 2px solid var(--activeButton);
+  outline-offset: 2px;
+}
 
 
