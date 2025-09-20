@@ -188,6 +188,16 @@
       </div>
     </footer>
     
-</body>
+<script>
+  // Simple ESC: always clear the hash so :target lightbox closes
+  document.addEventListener('keyup', function (e) {
+    var k = e.key || e.keyCode; // 'Escape' or 27
+    if (k === 'Escape' || k === 'Esc' || k === 27) {
+      window.location.hash = '';
+    }
+  });
+</script>
+
+  </body>
 </html>
 
