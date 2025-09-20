@@ -42,3 +42,35 @@ pre{overflow:auto;background:#f7f7f7;border:1px solid #e1e1e1;border-radius:8px;
   .grid.cols-2{grid-template-columns:1fr}
   .hero h1{font-size:36px}
 }
+/* ---- App screenshots row ----
+   Tweak height with: .shots-row { --shotH: 260px; } */
+.shots-row{
+  --shotH: 260px;
+  --shotGap: 30px;
+  display:flex;
+  flex-wrap:wrap;              /* allow wrapping on narrow screens */
+  justify-content:center;      /* center images when there’s extra space */
+  gap: var(--shotGap);
+  padding: 12px 0 6px;
+  /* remove horizontal scroll since we’re centering & wrapping */
+  overflow: visible;
+}
+/* card behind each screenshot */
+.shot-card{
+  background: var(--surface);
+  border: 1px solid var(--surfaceLine);
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+/* the screenshot itself */
+.shot{
+  height: var(--shotH);
+  width: auto;
+  display:block;
+  border-radius: 10px;         /* inner rounding (image) */
+  border: 1px solid var(--surfaceLine);
+}
+@media (max-width:800px){
+  .shots-row{ --shotH: 200px; } /* smaller on phones */
+}
