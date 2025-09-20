@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  
+  <a id="close" class="lb-reset" aria-hidden="true"></a>
     <nav>
       <div class="nav-wrap">
         <a class="brand" href="../index.html"><span class="dot"></span> Newborn Software</a>
@@ -65,28 +65,28 @@
 
 <!-- CSS-only lightbox targets (put these right after the screenshots section) -->
 <div id="shot1" class="lb">
-  <a href="#" class="lb-backdrop" aria-label="Close"></a>
-  <a href="#" class="lb-close" aria-label="Close">×</a>
+<a href="#close" class="lb-backdrop" aria-label="Close"></a>
+<a href="#close" class="lb-close" aria-label="Close">×</a>
   <img src="yatzyvibe1.jpg" alt="YatzyVibe screenshot 1">
 </div>
 <div id="shot2" class="lb">
-  <a href="#" class="lb-backdrop" aria-label="Close"></a>
-  <a href="#" class="lb-close" aria-label="Close">×</a>
+<a href="#close" class="lb-backdrop" aria-label="Close"></a>
+<a href="#close" class="lb-close" aria-label="Close">×</a>
   <img src="yatzyvibe2.jpg" alt="YatzyVibe screenshot 2">
 </div>
 <div id="shot3" class="lb">
-  <a href="#" class="lb-backdrop" aria-label="Close"></a>
-  <a href="#" class="lb-close" aria-label="Close">×</a>
+<a href="#close" class="lb-backdrop" aria-label="Close"></a>
+<a href="#close" class="lb-close" aria-label="Close">×</a>
   <img src="yatzyvibe3.jpg" alt="YatzyVibe screenshot 3">
 </div>
 <div id="shot4" class="lb">
-  <a href="#" class="lb-backdrop" aria-label="Close"></a>
-  <a href="#" class="lb-close" aria-label="Close">×</a>
+<a href="#close" class="lb-backdrop" aria-label="Close"></a>
+<a href="#close" class="lb-close" aria-label="Close">×</a>
   <img src="yatzyvibe4.jpg" alt="YatzyVibe screenshot 4">
 </div>
 <div id="shot5" class="lb">
-  <a href="#" class="lb-backdrop" aria-label="Close"></a>
-  <a href="#" class="lb-close" aria-label="Close">×</a>
+<a href="#close" class="lb-backdrop" aria-label="Close"></a>
+<a href="#close" class="lb-close" aria-label="Close">×</a>
   <img src="yatzyvibe5.jpg" alt="YatzyVibe screenshot 5">
 </div>
 
@@ -476,14 +476,15 @@
     </footer>
     
 <script>
-  // Simple ESC: always clear the hash so :target lightbox closes
+  // ESC closes the :target lightbox without jumping the page
   document.addEventListener('keyup', function (e) {
     var k = e.key || e.keyCode; // 'Escape' or 27
     if (k === 'Escape' || k === 'Esc' || k === 27) {
-      window.location.hash = '';
+      location.hash = 'close';
     }
   });
 </script>
+
 
   </body>
 </html>

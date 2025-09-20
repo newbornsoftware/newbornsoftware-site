@@ -132,6 +132,13 @@ nav a[aria-current="page"]{
   text-decoration-color: var(--activeButton);
 }
 
+/* Anchor used to close the lightbox without scrolling */
+.lb-reset{
+  position: fixed;  /* already "in view", so the browser doesn't scroll to it */
+  top: 0; left: 0;
+  width: 1px; height: 1px;
+  opacity: 0;
+}
 
 
 
