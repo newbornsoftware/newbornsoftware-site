@@ -57,6 +57,10 @@ pre{overflow:auto;background:#f7f7f7;border:1px solid #e1e1e1;border-radius:8px;
 }
 /* card behind each screenshot */
 .shot-card{
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: var(--surface);
   border: 1px solid var(--surfaceLine);
   border-radius: 16px;
@@ -64,8 +68,9 @@ pre{overflow:auto;background:#f7f7f7;border:1px solid #e1e1e1;border-radius:8px;
   box-shadow: 0 10px 22px rgba(0,0,0,0.15);
 }
 .shot-title {
+  width: 100%;
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   margin-bottom: 8px;
   color: #000000; /* adjust to match your theme */
