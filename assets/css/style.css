@@ -63,6 +63,13 @@ pre{overflow:auto;background:#f7f7f7;border:1px solid #e1e1e1;border-radius:8px;
   padding: 10px;
   box-shadow: 0 10px 22px rgba(0,0,0,0.15);
 }
+.shot-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #000000; /* adjust to match your theme */
+}
 /* the screenshot itself */
 .shot{
   height: var(--shotH);
