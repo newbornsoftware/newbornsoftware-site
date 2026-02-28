@@ -73,7 +73,7 @@ pre{overflow:auto;background:#f7f7f7;border:1px solid #e1e1e1;border-radius:8px;
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #000000; /* adjust to match your theme */
+  color: #000000; 
 }
 /* the screenshot itself */
 .shot{
