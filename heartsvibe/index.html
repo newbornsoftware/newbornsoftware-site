@@ -53,6 +53,14 @@
 
   <main class="container section">
 
+      <!-- Featured app screenshot -->
+  <section class="section">
+  <div class="shots-row landscape-shots" role="list">
+    <div class="shot-card" aria-hidden="true" style="visibility: hidden;"></div>
+    <div class="shot-card"><div class="shot-title">HeartsVibe</div><a href="#shot0"><img class="shot" src="HeartsVibe_2868x1320.png" alt="HeartsVibe" loading="lazy"></a></div>
+  </div>
+  </section>
+
       <!-- App screenshots (scrollable row) -->
   <section class="section">
   <div class="shots-row landscape-shots" role="list">
@@ -82,10 +90,17 @@
 
 
 <!-- CSS-only lightbox targets (put these right after the screenshots section) -->
-<div id="shot1" class="lb">
+<div id="shot0" class="lb">
 <a href="#close" class="lb-backdrop" aria-label="Close"></a>
 <a href="#close" class="lb-close" aria-label="Close">×</a>
 <a href="#shot9" class="lb-nav lb-prev" aria-label="Previous screenshot">&lsaquo;</a>
+<a href="#shot1" class="lb-nav lb-next" aria-label="Next screenshot">&rsaquo;</a>
+  <img src="HeartsVibe_2868x1320.png" alt="HeartsVibe">
+</div>
+<div id="shot1" class="lb">
+<a href="#close" class="lb-backdrop" aria-label="Close"></a>
+<a href="#close" class="lb-close" aria-label="Close">×</a>
+<a href="#shot0" class="lb-nav lb-prev" aria-label="Previous screenshot">&lsaquo;</a>
 <a href="#shot2" class="lb-nav lb-next" aria-label="Next screenshot">&rsaquo;</a>
   <img src="home1.png" alt="HeartsVibe home">
 </div>
@@ -142,7 +157,7 @@
 <a href="#close" class="lb-backdrop" aria-label="Close"></a>
 <a href="#close" class="lb-close" aria-label="Close">×</a>
 <a href="#shot8" class="lb-nav lb-prev" aria-label="Previous screenshot">&lsaquo;</a>
-<a href="#shot1" class="lb-nav lb-next" aria-label="Next screenshot">&rsaquo;</a>
+<a href="#shot0" class="lb-nav lb-next" aria-label="Next screenshot">&rsaquo;</a>
   <img src="score-sheet.png" alt="HeartsVibe score-sheet">
 </div>
 
